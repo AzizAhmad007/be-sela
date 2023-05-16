@@ -27,7 +27,7 @@ public class User {
     private String address;
     
     public enum ResourceType {
-        Admin,Customer
+        Admin,SuperAdmin
     }
 }
 
