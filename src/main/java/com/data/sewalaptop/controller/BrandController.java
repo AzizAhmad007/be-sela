@@ -165,8 +165,8 @@ public class BrandController {
         }
     }
 
-    @GetMapping("/List")
-    public ResponseEntity<Response> getList() {
+    @GetMapping("/List/{id}")
+    public ResponseEntity<Response> getList(@PathVariable("id")Long id) {
         try {
             Response resp = Response.builder()
             .code("200")
@@ -177,7 +177,7 @@ public class BrandController {
         } catch (Exception e) {
             Response resp = Response.builder()
             .code("400")
-            .data(brand.getAll())
+            .data(brand.getList())
             .message("Error")
             .build();
             return new ResponseEntity<Response>(resp, HttpStatus.NOT_FOUND);

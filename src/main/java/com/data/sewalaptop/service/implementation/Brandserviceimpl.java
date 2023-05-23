@@ -117,7 +117,7 @@ public class Brandserviceimpl implements Brandservice {
     }
 
     @Override
-    public List<Fiturdetaildto> getList() {
+    public List<Fiturdetaildto> getList(Long id) {
         List<Fiturdetaildto> getlist = new ArrayList<>();
         List<Brand> brandList = brandrepository.findAll();
         brandList.forEach((item)->{
@@ -126,17 +126,17 @@ public class Brandserviceimpl implements Brandservice {
         if (brand != null) {
             responseDto.setId(brand.getId());
         }
-        Spesification spek = spesificationrepository.findByBrandId(item.getId());
+        Spesification spek = spesificationrepository.findByBrandId(id);
             if (spek != null) {
                 responseDto.setProcessor(spek.getProcessor());
                 responseDto.setRam(spek.getRam());
                 responseDto.setStorage(spek.getStorage());
                 responseDto.setGraphic_card(spek.getGraphic_card());
             }
-            List<Fiturdetaildto> stk = stockrepository.findByBrandIdlList(item.getId());
+            List<Stock> stk = stockrepository.findByBrandIdAll(id);
             if (stk != null) {
-                responseDto.setCode(stk.toString());
-                responseDto.setStatus(stk.toString());
+                responseDto.setCode(stk.get(item.getId()) );
+                responseDto.setStatus(stk.getStatus());
             }
             getlist.add(responseDto);
         });

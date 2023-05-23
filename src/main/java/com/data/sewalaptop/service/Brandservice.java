@@ -15,7 +15,7 @@ public interface Brandservice {
 
     public List<SMdto> getAll();
 
-    public List<Fiturdetaildto> getList();
+    public List<Fiturdetaildto> getList(Long id);
 
     public Brand show(Long id);
 
