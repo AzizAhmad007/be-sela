@@ -234,7 +234,6 @@ public class PengajuanService {
         resp.setTglPengajuan(pengajuan.getTglPengajuan());
         resp.setTglPenerima(pengajuan.getTglPenerima());
         resp.setStatus(pengajuan.getStatus());
-        resp.setMessage(pengajuan.getMessage());
 
         MstKaryawan karyawan = karyawanRepo.findByKaryawanId(resp.getKaryawanId());
         MstKaryawanDTO dtoKaryawan = new MstKaryawanDTO();
