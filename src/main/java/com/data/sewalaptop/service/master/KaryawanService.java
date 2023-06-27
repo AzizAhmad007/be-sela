@@ -97,6 +97,20 @@ public class  KaryawanService {
             if (isNullStr(requestDTO.getNamaDepan())) {
                 if (isNullStr(requestDTO.getNamaBelakang()))
                     if (isNullStr(requestDTO.getNikKaryawan())) {
+                        // Cek format email
+                        if (!isValidEmail(requestDTO.getEmailKaryawan())) {
+                            response.setCode("204");
+                            response.setMessage("Email tidak valid");
+                            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+                        }
+                        // Cek apakah email sudah ada di database
+                        MstKaryawan existingKaryawan = karyawanRepo.findByEmail(requestDTO.getEmailKaryawan());
+                        if (existingKaryawan != null) {
+                            response.setCode("204");
+                            response.setMessage("Email sudah ada");
+                            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
+                        }
+                        // Cek data tidak boleh null atau kosong
                         if (isNullStr(requestDTO.getEmailKaryawan())) {
                             if (isNullStr(requestDTO.getAlamatKaryawan())) {
                                 if (isNullStr(requestDTO.getTelpKaryawan())) {
@@ -114,19 +128,19 @@ public class  KaryawanService {
                                     response.setData(null);
                                     response.setMessage("Karyawan has been saved successfully");
                                     return new ResponseEntity<>(response, HttpStatus.CREATED);
+                                }
+                                response.setCode("204");
+                                response.setMessage("Telp Karyawan cannot be empty");
+                                return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
                             }
                             response.setCode("204");
-                            response.setMessage("Telp Karyawan cannot be empty");
+                            response.setMessage("Alamat Karyawan cannot be empty");
                             return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
                         }
                         response.setCode("204");
-                        response.setMessage("Alamat Karyawan cannot be empty");
+                        response.setMessage("Email Karyawan cannot be empty");
                         return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
                     }
-                    response.setCode("204");
-                    response.setMessage("Email Karyawan cannot be empty");
-                    return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-                }
                 response.setCode("204");
                 response.setMessage("NIK Karyawan cannot be empty");
                 return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
@@ -140,6 +154,10 @@ public class  KaryawanService {
         return new ResponseEntity<>(response, HttpStatus.CONFLICT);
     }
 
+    private boolean isValidEmail(String emailKaryawan){
+        String emailRegex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$";
+        return emailKaryawan.matches(emailRegex);
+    }
     private ResponseEntity<?> updateKaryawan(MstKaryawanDTO requestDTO){
         ResponseDTO response = new ResponseDTO();
         MstKaryawan karyawanEntity = new MstKaryawan();

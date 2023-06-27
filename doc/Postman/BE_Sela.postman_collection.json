@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "9efbeaa9-f9ad-4d01-8cb6-f7ba68794f0b",
+		"_postman_id": "7fb5341c-af87-4a87-9f9f-65b623d60bd3",
 		"name": "BE_Sela",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "20727504",
-		"_collection_link": "https://cloudy-water-444012.postman.co/workspace/Java-Springboot~1541c8ba-92f4-442b-ad0e-55ed9b203356/collection/27898378-9efbeaa9-f9ad-4d01-8cb6-f7ba68794f0b?action=share&creator=20727504&source=collection_link"
+		"_collection_link": "https://cloudy-water-444012.postman.co/workspace/Java-Springboot~1541c8ba-92f4-442b-ad0e-55ed9b203356/collection/27898378-7fb5341c-af87-4a87-9f9f-65b623d60bd3?action=share&creator=20727504&source=collection_link"
 	},
 	"item": [
 		{
@@ -53,7 +53,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg2NzM0Mzg5fQ.gIGJV5QlpreYQjVQjhqUbJqKtMs1d9pvyugzBXoa7Z6kHruw0-wtOfxZROpQozp9WppZHhtfzqVdkVDOHHDrzw",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -184,7 +184,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDA4NTc3fQ.2kWl1zJT5-F02SFn6cLoJWsxLFRJVKsZi_m2tPnS3dsbbnV5bYWaZT8a5FvHmHAaEONkr0ijl-ABmSKZePfAhA",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -217,7 +217,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3MzIxODA3fQ._10l3f2FIWW7gZ1cCbX8PwsCcmUyZxg4fwobQLtWPwpPW5i_1mVgbF7Uvlt2ffbGnsyWGRqgmKlK9ekQy9pwzg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -226,7 +226,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"deviceId\": 2,\r\n    \"deviceName\": \"NOTE BOOK\",\r\n    \"storage\" : \"512SSD\",\r\n    \"processor\" : \"M2 Pro Chip\",\r\n    \"ram\" : \"16\",\r\n    \"graphicCard\" : \"16 core\"\r\n}",
+							"raw": "{\r\n    \"deviceId\": 1,\r\n    \"deviceName\": \"MAC BOOK\",\r\n    \"storage\" : \"512SSD\",\r\n    \"processor\" : \"M2 Pro Chip\",\r\n    \"ram\" : \"16\",\r\n    \"graphicCard\" : \"16 core\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -257,7 +257,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3MzIxODA3fQ._10l3f2FIWW7gZ1cCbX8PwsCcmUyZxg4fwobQLtWPwpPW5i_1mVgbF7Uvlt2ffbGnsyWGRqgmKlK9ekQy9pwzg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -266,7 +266,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"spekId\": 402,\r\n    \"deviceId\": 1,\r\n    \"deviceName\": \"Mac Book\",\r\n    \"storage\": \"512SSD\",\r\n    \"processor\": \"M2 Pro Chip\",\r\n    \"ram\": \"16\",\r\n    \"graphicCard\": \"16 coree\"\r\n}",
+							"raw": "{\r\n    \"spekId\": 452,\r\n    \"deviceId\": 1,\r\n    \"deviceName\": \"Mac Book\",\r\n    \"storage\": \"512SSD\",\r\n    \"processor\": \"M2 Pro Chip\",\r\n    \"ram\": \"16\",\r\n    \"graphicCard\": \"16 cores\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -993,7 +993,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3MjUyNTQzfQ.tnj99WFTkeLLQDIZBw2k0GkRaQsdqn4FgF10dQxSfX5ry3JaGv8kpk5c6J6CbonpWsxf08GuftVSljv71AMD0w",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDk0OTAwfQ.odHab4ZcdtZqY-XAMnPzdN756hjs-LkHNQ3brZO6T7tsqe_NvRBxdXQNMMzYAVlajpfm4W26tnPBbfUwcwjKZw",
 									"type": "string"
 								}
 							]
@@ -1001,7 +1001,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/user/get_by/3",
+							"raw": "localhost:8080/api/v1/user/get_by/52",
 							"host": [
 								"localhost"
 							],
@@ -1011,7 +1011,7 @@
 								"v1",
 								"user",
 								"get_by",
-								"3"
+								"52"
 							]
 						}
 					},
@@ -1025,7 +1025,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3MjUyNTQzfQ.tnj99WFTkeLLQDIZBw2k0GkRaQsdqn4FgF10dQxSfX5ry3JaGv8kpk5c6J6CbonpWsxf08GuftVSljv71AMD0w",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDk0OTAwfQ.odHab4ZcdtZqY-XAMnPzdN756hjs-LkHNQ3brZO6T7tsqe_NvRBxdXQNMMzYAVlajpfm4W26tnPBbfUwcwjKZw",
 									"type": "string"
 								}
 							]
@@ -1661,7 +1661,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDQwMjcxfQ.F1vr1g7lhpQv0qr1XcIonMoxq9O5AnQbIq0DEFirNDq8UnRA6lhVLdQ6k3Sm_KRSvliVWqGs1jqB40o4GLDKrg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -1670,7 +1670,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"spekId\" : 403,\r\n    \"karyawanId\" : 152,\r\n    \"noMemo\" : \"107/45TDM/001\",\r\n    \"tglPengajuan\" : \"2023-06-13\",\r\n    \"tglPenerima\" : \"2023-06-25\",\r\n    \"status\" : \"diajukan\"\r\n}",
+							"raw": "{\r\n    \"spekId\" : 403,\r\n    \"karyawanId\" : 155,\r\n    \"noMemo\" : \"107/45TDM/001\",\r\n    \"tglPengajuan\" : \"2023-06-13\",\r\n    \"tglPenerima\" : \"2024-06-13\",\r\n    \"status\" : \"diajukan\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1701,7 +1701,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg2ODkwNDE4fQ.kywrmAnQ-9aZfXgjT5gw-cHg7orbCo8mF7IYVd5VXlCNSQ6oSSFcAbxh2wzNxZduxtTXhNptHIY_r1wbI_RA-Q",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3OTM2ODc2fQ.DCsC3I53OP394F1kvzzQJUrpm8h4nmyKisxgHtCHjlus15BQYveam7c3a8YhYLwo-90HS-RUK0KubCymMxhbqg",
 									"type": "string"
 								}
 							]
@@ -1710,7 +1710,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"pengajuanId\" : 152,\r\n    \"karyawanId\" : 152,\r\n    \"spekId\" : 202,\r\n    \"noMemo\" : \"001/003/09-06-2023\",\r\n    \"tglPengajuan\" : \"2023-06-03\",\r\n    \"tglPenerima\" : \"2023-06-16\",\r\n    \"status\" : \"diprosess\"\r\n}",
+							"raw": "{\r\n    \"pengajuanId\": 402,\r\n    \"spekId\": 403,\r\n    \"karyawanId\": 155,\r\n    \"noMemo\": \"007/019/2023\",\r\n    \"tglPengajuan\": \"2023-06-13T00:00:00.000+00:00\",\r\n    \"tglPenerima\": \"2023-06-25T00:00:00.000+00:00\",\r\n    \"status\": \"disetujui\",\r\n    \"message\": \"Maaf pengajuan gagal\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1741,7 +1741,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDQwMjcxfQ.F1vr1g7lhpQv0qr1XcIonMoxq9O5AnQbIq0DEFirNDq8UnRA6lhVLdQ6k3Sm_KRSvliVWqGs1jqB40o4GLDKrg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3OTM2ODc2fQ.DCsC3I53OP394F1kvzzQJUrpm8h4nmyKisxgHtCHjlus15BQYveam7c3a8YhYLwo-90HS-RUK0KubCymMxhbqg",
 									"type": "string"
 								}
 							]
@@ -1769,7 +1769,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg2ODEzNTE3fQ.K6WSJ2cKaycLGx4lVWGne8Vrog50gGS6WUdDK0GSvdRfoodJtZ7QPvzHgnS1SCN-JACKMp44G09nW_PJDHnUDw",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3ODQ3ODg0fQ.aqU9Nk5DgUugVmI59jckA2OH7PREe_Y-pTj6gyZ6YXUHAK1Rvd0057ovP4XsJLQ6b8Ietyc2a0A8r5f6qaQGXg",
 									"type": "string"
 								}
 							]
@@ -1781,7 +1781,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/api/v1/pengajuan/delete/103",
+							"raw": "localhost:8080/api/v1/pengajuan/delete/352",
 							"host": [
 								"localhost"
 							],
@@ -1791,7 +1791,7 @@
 								"v1",
 								"pengajuan",
 								"delete",
-								"103"
+								"352"
 							]
 						}
 					},
@@ -1805,7 +1805,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3NDQwMjcxfQ.F1vr1g7lhpQv0qr1XcIonMoxq9O5AnQbIq0DEFirNDq8UnRA6lhVLdQ6k3Sm_KRSvliVWqGs1jqB40o4GLDKrg",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJzZWxhIiwiZXhwIjoxNjg3OTM2ODc2fQ.DCsC3I53OP394F1kvzzQJUrpm8h4nmyKisxgHtCHjlus15BQYveam7c3a8YhYLwo-90HS-RUK0KubCymMxhbqg",
 									"type": "string"
 								}
 							]
@@ -1813,7 +1813,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8080/api/v1/pengajuan/get_all_by/3034",
+							"raw": "localhost:8080/api/v1/pengajuan/get_all_by/402",
 							"host": [
 								"localhost"
 							],
@@ -1823,7 +1823,7 @@
 								"v1",
 								"pengajuan",
 								"get_all_by",
-								"3034"
+								"402"
 							]
 						}
 					},
