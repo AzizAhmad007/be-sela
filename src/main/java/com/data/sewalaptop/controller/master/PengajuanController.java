@@ -51,23 +51,23 @@ public class PengajuanController {
     }
 
     //Upadate
-    @PutMapping("/update")
-    public Map<String, Object> updatePengajuan (@RequestHeader Map<String,String> header,
-                                                @RequestParam(value = "pengajuanId")
-                                                Long pengajuanId,
-                                                @RequestBody MstDevicesDTO mstDevicesDto){
-        Map<String, Object> mapResult = new HashMap<>();
-
-        MstPengajuan mstPengajuan = pengajuanRepository.findById(pengajuanId).orElse(null);
-
-        mstPengajuan.setDeviceName(mstDevicesDto.getDeviceName());
-
-        mapResult.put("message", "Update success");
-        mapResult.put("data", pengajuanRepository.save(mstPengajuan));
-
-        jwtService.filter(header);
-        return mapResult;
-    }
+//    @PutMapping("/update")
+//    public Map<String, Object> updatePengajuan (@RequestHeader Map<String,String> header,
+//                                                @RequestParam(value = "pengajuanId")
+//                                                Long pengajuanId,
+//                                                @RequestBody MstDevicesDTO mstDevicesDto){
+//        Map<String, Object> mapResult = new HashMap<>();
+//
+//        MstPengajuan mstPengajuan = pengajuanRepository.findById(pengajuanId).orElse(null);
+//
+//        mstPengajuan.setDeviceName(mstDevicesDto.getDeviceName());
+//
+//        mapResult.put("message", "Update success");
+//        mapResult.put("data", pengajuanRepository.save(mstPengajuan));
+//
+//        jwtService.filter(header);
+//        return mapResult;
+//    }
 
 
     @DeleteMapping("/delete/{pengajuanId}")
