@@ -16,4 +16,5 @@ public class MstPengajuanDTO {
     private Date tglPengajuan;
     private Date tglPenerima;
     private String status;
+    private String message;
 }

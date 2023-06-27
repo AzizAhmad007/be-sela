@@ -34,4 +34,7 @@ public class MstPengajuan {
 
     @Column(name = "status")
     private String status;
+
+    @Column(name = "message")
+    private String message;
 }

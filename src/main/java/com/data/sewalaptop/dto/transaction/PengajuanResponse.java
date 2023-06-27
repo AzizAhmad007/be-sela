@@ -29,4 +29,5 @@ public class PengajuanResponse {
     private Date tglPengajuan;
     private Date tglPenerima;
     private String status;
+    private String message;
 }
