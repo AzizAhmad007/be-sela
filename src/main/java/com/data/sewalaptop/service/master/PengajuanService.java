@@ -170,8 +170,8 @@ public class PengajuanService {
             MstKaryawan karyawan = karyawanRepo.findByKaryawanId(resp.getKaryawanId());
             MstKaryawanDTO dtoKaryawan = new MstKaryawanDTO();
 
-            dtoKaryawan.setKaryawanId(karyawan.getKaryawanId());
-            dtoKaryawan.setDivisiId(karyawan.getDivisiId());
+//            dtoKaryawan.setKaryawanId(karyawan.getKaryawanId());
+//            dtoKaryawan.setDivisiId(karyawan.getDivisiId());
             dtoKaryawan.setNikKaryawan(karyawan.getNikKaryawan());
             dtoKaryawan.setNamaDepan(karyawan.getNamaDepan());
             dtoKaryawan.setNamaBelakang(karyawan.getNamaBelakang());
@@ -179,7 +179,7 @@ public class PengajuanService {
             MstDivisi divisi = divisiRespo.findByDivisiId(karyawan.getDivisiId());
             MstDivisiDTO dtoDivisi = new MstDivisiDTO();
 
-            dtoDivisi.setDivisiId(divisi.getDivisiId());
+//            dtoDivisi.setDivisiId(divisi.getDivisiId());
             dtoDivisi.setNamaDivisi(divisi.getNamaDivisi());
 
             MstSpesifikasi spesifikasi = spesificationRepo.findBySpekId(resp.getSpekId());
@@ -230,8 +230,8 @@ public class PengajuanService {
         MstKaryawan karyawan = karyawanRepo.findByKaryawanId(resp.getKaryawanId());
         MstKaryawanDTO dtoKaryawan = new MstKaryawanDTO();
 
-        dtoKaryawan.setKaryawanId(karyawan.getKaryawanId());
-        dtoKaryawan.setDivisiId(karyawan.getDivisiId());
+//        dtoKaryawan.setKaryawanId(karyawan.getKaryawanId());
+//        dtoKaryawan.setDivisiId(karyawan.getDivisiId());
         dtoKaryawan.setNikKaryawan(karyawan.getNikKaryawan());
         dtoKaryawan.setNamaDepan(karyawan.getNamaDepan());
         dtoKaryawan.setNamaBelakang(karyawan.getNamaBelakang());
@@ -239,7 +239,7 @@ public class PengajuanService {
         MstDivisi divisi = divisiRespo.findByDivisiId(karyawan.getDivisiId());
         MstDivisiDTO dtoDivisi = new MstDivisiDTO();
 
-        dtoDivisi.setDivisiId(divisi.getDivisiId());
+//        dtoDivisi.setDivisiId(divisi.getDivisiId());
         dtoDivisi.setNamaDivisi(divisi.getNamaDivisi());
 
         MstSpesifikasi spesifikasi = spesificationRepo.findBySpekId(resp.getSpekId());
@@ -259,14 +259,10 @@ public class PengajuanService {
         resp.setKaryawan(dtoKaryawan);
         resp.setDivisi(dtoDivisi);
         resp.setDevice(dtoDevice);
-        if (pengajuan == null){
-            response.setCode("204");
-            response.setMessage("All Pengajuan ID not found");
-            return new ResponseEntity<>(response, HttpStatus.INTERNAL_SERVER_ERROR);
-        }
+
         response.setCode("200");
         response.setData(resp);
-        response.setMessage("Get Data By Karyawan Id successfully");
+        response.setMessage("Get Data By Pengajuan Id successfully");
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
