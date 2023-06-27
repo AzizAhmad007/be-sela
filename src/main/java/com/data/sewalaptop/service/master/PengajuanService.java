@@ -81,7 +81,6 @@ public class PengajuanService {
             pengajuanEntity.setTglPengajuan(requestDTO.getTglPengajuan());
             pengajuanEntity.setTglPenerima(requestDTO.getTglPenerima());
             pengajuanEntity.setStatus(requestDTO.getStatus());
-            pengajuanEntity.setMessage(requestDTO.getMessage());
 
             pengajuanRepo.save(pengajuanEntity);
         }
@@ -234,6 +233,7 @@ public class PengajuanService {
         resp.setTglPengajuan(pengajuan.getTglPengajuan());
         resp.setTglPenerima(pengajuan.getTglPenerima());
         resp.setStatus(pengajuan.getStatus());
+        resp.setMessage(pengajuan.getMessage());
 
         MstKaryawan karyawan = karyawanRepo.findByKaryawanId(resp.getKaryawanId());
         MstKaryawanDTO dtoKaryawan = new MstKaryawanDTO();
